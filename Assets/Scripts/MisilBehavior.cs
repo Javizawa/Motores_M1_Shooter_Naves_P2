@@ -21,7 +21,7 @@ public class MisilBehaviuor : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         Debug.Log(tagName);
 
-        if(collision.gameObject.tag == "Untagged" || collision.gameObject.tag != tagName)
+        if((collision.gameObject.tag == "Untagged" || collision.gameObject.tag != tagName) && collision.gameObject.tag != "Decorados")
         {
             Destroy(collision.gameObject);
             DestroyMisile();
